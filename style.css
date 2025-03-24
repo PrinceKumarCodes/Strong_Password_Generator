@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  font-family: "poppins", sans-serif;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  object-fit: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("/Image/background.png"); /* opacity top , down  per set hoga first top and second bottom*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+/* --------------------Left part-------------------- */
+
+.container .left-part {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-basis: 60%;
+  /* background-color: gray; */
+  color: white;
+  display: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 10px;
+  padding: 20px;
+  padding-top: 5px;
+}
+.container .left-part .profile-logo img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 8px solid green;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.container .left-part .profile-logo img:hover {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 8px solid blue;
+  overflow: hidden;
+}
+
+.left-part .social-media {
+  padding-top: 11px;
+  font-size: 30px;
+}
+.left-part .social-media i {
+  color: white;
+  transition: 0.5s;
+}
+.left-part .social-media i:hover {
+  transform: rotate(360deg);
+  color: blue;
+}
+.profile-text h1 {
+  background: linear-gradient(to right, #0344da, #bd0013);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------Right part-------------------- */
+
+.container .right-part {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  flex-basis: 50%;
+  /* background-color: green; */
+  /* background-color: #333; */
+  color: white;
+  display: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 10px;
+  padding: 20px;
+  margin-top: 2%;
+}
+.Password-container {
+  background-color: #434248;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+  padding-top: 50px;
+  border-radius: 40px;
+  border: 3px double blue;
+  box-shadow: 3px 3px 1px rgb(239, 247, 24), -3px -3px 1px rgb(229, 61, 5);
+}
+.display {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 3px rgb(87, 87, 87), -5px -5px 1px white;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+.container h1 span {
+  background: linear-gradient(to right, #da00ff, #0600ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 5px solid #019f55;
+  padding-bottom: 7px;
+}
+
+.display img {
+  width: 30px;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px grey, -3px -3px 0px white;
+  border-radius: 5px;
+}
+
+.display img:hover {
+  box-shadow: inset 3px 3px 2px grey, inset -3px -3px 0px white;
+}
+
+.display input {
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
+
+button i {
+  width: 30px;
+  margin-right: 3px;
+  animation-name: animate;
+  animation-duration: 0.15ms;
+  animation-timing-function: ease-in;
+  animation-delay: 0.1ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  0% {
+    color: #141414;
+  }
+  100% {
+    color: #444444;
+  }
+}
+
+button {
+  border: 0;
+  outline: o;
+  background: #333333;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  border-radius: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+button:hover {
+  border: 2px solid green;
+}
+
+/* -------Responsive-------------- */
+
+@media (max-width: 760px) {
+  .container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+    padding: 30px 15px 30px 15px;
+  }
+
+  .container .left-part {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex-basis: 60%;
+    /* background-color: gray; */
+    color: white;
+    display: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    margin: 10px 0px;
+    padding: 0px;
+    padding-top: 5px;
+  }
+
+  .container .right-part {
+    position: relative;
+    width: 90vw;
+    height: 60vh;
+
+    max-width: 100%;
+    background-color: #434248;
+    border-radius: 40px;
+    box-shadow: 3px 3px 1px rgb(239, 247, 24), -3px -3px 1px rgb(229, 61, 5);
+    left: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+  }
+  .display {
+    width: 100%;
+    margin: 70px 5px 30px 5px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 3px rgb(87, 87, 87), -5px -5px 1px white;
+  }
+  .Password-container {
+    background-color: #434248;
+    width: 100%;
+    height: 100%;
+    padding: 100px 12px;
+    padding-top: 50px;
+    border-radius: 40px;
+    border: 3px double blue;
+    box-shadow: 3px 3px 1px rgb(239, 247, 24), -3px -3px 1px rgb(229, 61, 5);
+  }
+  .container h1 span {
+    background: linear-gradient(to right, #da00ff, #0600ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid #019f55;
+    padding-bottom: 7px;
+  }
+  .display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 250px;
+  }
+  .left-part .social-media {
+    padding: 30px 0px;
+    font-size: 30px;
+  }
+}
